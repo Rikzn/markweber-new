@@ -1697,12 +1697,45 @@ img.intro__slider-image--phone {
       bottom: -7rem;
       width: 44rem; } }
 
-img.intro__slider-image--expert {
-  bottom: -2rem;
-  right: 0rem;
-  width: 60rem; }
+img.intro__slider-image--bank-kazan {
+  bottom: 73px;
+  width: 38.6rem;
+  right: -55px; }
   @media only screen and (max-width: 640px) {
-    img.intro__slider-image--expert {
+    img.intro__slider-image--bank-kazan {
+      width: 42rem;
+      right: auto;
+      left: 1rem;
+      bottom: -3rem; } }
+
+img.intro__slider-image--tatsosbank {
+  bottom: 73px;
+  width: 35.5rem;
+  right: -1px; }
+  @media only screen and (max-width: 640px) {
+    img.intro__slider-image--tatsosbank {
+      width: 42rem;
+      right: auto;
+      left: 1rem;
+      bottom: -3rem; } }
+
+img.intro__slider-image--bars {
+  bottom: 50px;
+  width: 63.7rem;
+  right: -102px; }
+  @media only screen and (max-width: 640px) {
+    img.intro__slider-image--bars {
+      width: 42rem;
+      right: auto;
+      left: 1rem;
+      bottom: -3rem; } }
+
+img.intro__slider-brutaliti {
+  bottom: -48px;
+  width: 45.5rem;
+  right: -33px; }
+  @media only screen and (max-width: 640px) {
+    img.intro__slider-brutaliti {
       width: 42rem;
       right: auto;
       left: 1rem;
@@ -3533,7 +3566,8 @@ img.intro__slider-image--icl {
   font-size: 3.2rem;
   line-height: 3.8rem;
   letter-spacing: -0.02em;
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  width: 101%; }
   @media only screen and (max-width: 640px) {
     .expertise__main-slider-card-text {
       font-size: 2rem;
@@ -3643,7 +3677,7 @@ img.intro__slider-image--icl {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 140%;
+  width: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 100%;
@@ -3661,9 +3695,9 @@ img.intro__slider-image--icl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -3725,7 +3759,7 @@ img.intro__slider-image--icl {
     margin-right: 0; }
 
 .expertise__partners-link-image {
-  max-width: 8.4rem;
+  max-width: 17.6rem;
   max-height: 6.4rem;
   width: auto;
   height: auto;

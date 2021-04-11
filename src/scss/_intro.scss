@@ -469,10 +469,49 @@ img.intro__slider-image--phone {
     }
 }
 
-img.intro__slider-image--expert {
-    bottom: -2rem;
-    right: 0rem;
-    width: 60rem;
+img.intro__slider-image--bank-kazan {
+    bottom: 73px;
+    width: 38.6rem;
+    right: -55px;
+
+    @include breakpoint(mobile) {
+        width: 42rem;
+        right: auto;
+        left: 1rem;
+        bottom: -3rem;
+    }
+}
+
+img.intro__slider-image--tatsosbank {
+    bottom: 73px;
+    width: 35.5rem;
+    right: -1px;
+
+    @include breakpoint(mobile) {
+        width: 42rem;
+        right: auto;
+        left: 1rem;
+        bottom: -3rem;
+    }
+}
+
+img.intro__slider-image--bars {
+    bottom: 50px;
+    width: 63.7rem;
+    right: -102px;
+
+    @include breakpoint(mobile) {
+        width: 42rem;
+        right: auto;
+        left: 1rem;
+        bottom: -3rem;
+    }
+}
+
+img.intro__slider-brutaliti {
+    bottom: -48px;
+    width: 45.5rem;
+    right: -33px;
 
     @include breakpoint(mobile) {
         width: 42rem;

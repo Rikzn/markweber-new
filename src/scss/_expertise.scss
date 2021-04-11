@@ -215,6 +215,7 @@
     line-height: 3.8rem;
     letter-spacing: -0.02em;
     margin-bottom: 8rem;
+    width: 101%;
 
     @include breakpoint(mobile) {
         font-size: 2rem;
@@ -335,7 +336,7 @@
     position: absolute;
     left: 50%;
     top: 0;
-    width: 140%;
+    width: 100%;
     transform: translateX(-50%);
     height: 100%;
     max-width: none;
@@ -348,7 +349,7 @@
 
 .expertise__partners {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: auto;
@@ -391,7 +392,7 @@
 }
 
 .expertise__partners-link-image {
-    max-width: 8.4rem;
+    max-width: 17.6rem;
     max-height: 6.4rem;
     width: auto;
     height: auto;
