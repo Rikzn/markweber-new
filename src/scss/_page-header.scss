@@ -44,6 +44,9 @@
 .page-header__logo-link {
     transition: none;
     pointer-events: initial;
+    &>svg {
+        fill: #fff;
+    }
 }
 
 .page-header__logo-image {

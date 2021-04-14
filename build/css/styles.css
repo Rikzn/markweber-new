@@ -1903,6 +1903,8 @@ img.intro__slider-image--icl {
   -webkit-transition: none;
   transition: none;
   pointer-events: initial; }
+  .page-header__logo-link > svg {
+    fill: #fff; }
 
 .page-header__logo-image {
   width: 10rem; }
@@ -4527,6 +4529,12 @@ img.intro__slider-image--icl {
       -ms-flex-align: center;
           align-items: center;
   padding-left: var(--left-column-width); }
+
+.breadcrumbs {
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  background-color: #24282a; }
 
 .breadcrumbs__list {
   -ms-flex-item-align: stretch;

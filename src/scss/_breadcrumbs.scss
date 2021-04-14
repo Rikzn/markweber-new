@@ -5,6 +5,13 @@
     padding-left: var(--left-column-width);
 }
 
+.breadcrumbs {
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    background-color: #24282a;
+}
+
 .breadcrumbs__list {
     align-self: stretch;
     display: flex;
