@@ -2139,7 +2139,8 @@ img.intro__slider-image--icl {
 
 .page-footer__left-col {
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  margin-right: 2rem; }
   @media only screen and (max-width: 640px) {
     .page-footer__left-col {
       -ms-flex-negative: 1;
@@ -2317,6 +2318,7 @@ img.intro__slider-image--icl {
       grid-area: download; } }
 
 .page-footer__brief-link {
+  position: relative;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -2340,18 +2342,41 @@ img.intro__slider-image--icl {
   text-align: center;
   color: #24282b;
   margin-bottom: 5rem;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  overflow: hidden; }
+  .page-footer__brief-link::after {
+    position: absolute;
+    content: attr(data-text);
+    pointer-events: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .page-footer__brief-link:hover > div {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .page-footer__brief-link:hover::after {
+    opacity: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   @media only screen and (max-width: 640px) {
     .page-footer__brief-link {
       display: none; } }
   .page-footer__brief-link:link, .page-footer__brief-link:visited {
     color: #24282b; }
-  .no-touch .page-footer__brief-link:hover {
-    -webkit-transform: scale(1.04);
-            transform: scale(1.04); }
+  .page-footer__brief-link .page-footer__brief-link-inner {
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
 
 .page-footer__download-link {
   display: -webkit-inline-box;
@@ -2371,6 +2396,7 @@ img.intro__slider-image--icl {
       fill: #f8f8f8; }
 
 .page-footer__download-link-icon {
+  position: relative;
   width: 5.2rem;
   height: 5.2rem;
   display: -webkit-box;
@@ -2392,7 +2418,8 @@ img.intro__slider-image--icl {
       flex-shrink: 0;
   margin-right: 1.8rem;
   -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s; }
+  transition: background-color 0.2s;
+  overflow: hidden; }
   .page-footer__download-link-icon svg {
     width: 1.38rem;
     height: 1.8rem;
@@ -2400,7 +2427,33 @@ img.intro__slider-image--icl {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -webkit-transition: fill 0.2s;
-    transition: fill 0.2s; }
+    transition: fill 0.2s;
+    position: absolute; }
+  .page-footer__download-link-icon > svg:first-child {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .page-footer__download-link-icon > svg:last-child {
+    top: 125%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .page-footer__download-link-icon:hover > svg:first-child {
+    -webkit-transform: translate(-50%, -250%);
+            transform: translate(-50%, -250%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .page-footer__download-link-icon:hover > svg:last-child {
+    top: 125%;
+    -webkit-transform: translate(-50%, -270%);
+            transform: translate(-50%, -270%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
 
 .page-footer__download-link-content {
   display: -webkit-box;
@@ -4010,6 +4063,7 @@ img.intro__slider-image--icl {
     color: white; }
 
 .menu__brief-link {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4021,19 +4075,41 @@ img.intro__slider-image--icl {
   line-height: 2.5rem;
   letter-spacing: -0.02em;
   color: #24282B;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s; }
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
   @media only screen and (max-width: 640px) {
     .menu__brief-link {
       padding: 1.6rem 2.4rem;
       font-size: 1.6rem; } }
+  .menu__brief-link::after {
+    position: absolute;
+    content: attr(data-text);
+    pointer-events: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .menu__brief-link:hover .menu__brief-link-inner {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .menu__brief-link:hover::after {
+    opacity: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
   .menu__brief-link:link, .menu__brief-link:visited {
     color: #24282B; }
-  .no-touch .menu__brief-link:hover {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02); }
+  .menu__brief-link-inner {
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
 
 .stories-slider {
   background-color: #fff;

@@ -231,6 +231,7 @@
 }
 
 .menu__brief-link {
+    position: relative;
     display: inline-flex;
     padding: 3.6rem 6.5rem;
     background: #f9cc46;
@@ -240,19 +241,42 @@
     line-height: 2.5rem;
     letter-spacing: -0.02em;
     color: #24282B;
-    transition: transform .3s;
+    transition: 0.2s;
 
     @include breakpoint(mobile) {
         padding: 1.6rem 2.4rem;
         font-size: 1.6rem;
     }
-
+    &::after {
+        position: absolute;
+        content: attr(data-text);
+        pointer-events: none;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    &:hover {
+        .menu__brief-link-inner {
+            transform: translateY(-300%);
+            transition: 0.2s;
+        }
+        &::after {
+            opacity: 1;
+            transition: 0.2s;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
     &:link,
     &:visited {
         color: #24282B;
     }
-
-    .no-touch &:hover {
-        transform: scale(1.02);
+    &-inner {
+        transition: 0.2s;
     }
+
 }
