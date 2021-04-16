@@ -10,9 +10,9 @@ export default function FixedContactsSidebar() {
         '(min-width: 641px)': () => {
             ScrollTrigger.create({
                 trigger: '.contact__sidebar',
-                start: 'top-=100px top',
+                start: 'top-=150px top',
                 endTrigger: '.contact',
-                end: 'bottom bottom',
+                end: '1000px',
                 pin: true,
                 pinSpacing: true
             });
