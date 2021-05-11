@@ -10,6 +10,15 @@
     z-index: 11;
     width: 100%;
     background-color: #24282a;
+
+}
+
+.fixed {
+    .breadcrumbs__list {
+        &::before {
+            width: 120%;
+        }
+    }
 }
 
 .breadcrumbs__list {
@@ -20,15 +29,18 @@
     // border-bottom: 1px solid #ffffff;
     padding-bottom: 0.2rem;
     position: relative;
+
     &::before {
         content: '';
-        left: 0;
+        right: 0;
         width: 100%;
         height: 1px;
         background-color: #fff;
         position: absolute;
         top: 100%;
+        // transition: 0.1s;
     }
+
 }
 
 .breadcrumbs__link {
@@ -38,13 +50,16 @@
     line-height: 1.8rem;
     letter-spacing: -0.03em;
     font-weight: 500;
+
     @include breakpoint(small-tablet) {
         display: none;
     }
+
     &:link,
     &:visited {
         color: white;
     }
+
     .breadcrumbs__list-item.active & {
         color: #586267;
     }

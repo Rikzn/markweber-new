@@ -21,7 +21,7 @@ import Validation from './validation';
 import PhoneMask from './phoneMask';
 import RefreshScroll from './refreshScroll';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     polyfills();
     detectTouch();
     IntroSlider();
@@ -43,18 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
     Validation();
     PhoneMask();
     RefreshScroll();
-    
+
     const imgLoaded = imagesLoaded(document.querySelector('.page-content'));
 
     imgLoaded.on('always', () => {
-        if (!window.matchMedia('(max-width: 640px)').matches) {
-            $('.page-header').midnight();    
-        }
+        $('.page-header').midnight();  
     });
 
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     document.body.classList.add('loaded');
     setTimeout(() => document.body.classList.add('animatable'), 300)
 })
+

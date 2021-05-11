@@ -94,6 +94,7 @@
         margin: 0;
         margin-right: 2rem;
         display: inline-flex;
+
         &::after {
             display: block;
             content: attr(data-text);
@@ -106,23 +107,27 @@
         &.active {
             font-weight: 600;
         }
+
         &:last-child {
             margin-right: 0;
         }
     }
-   
+
 }
 
 .expertise__nav-slider {
     width: 75%;
     margin-bottom: 10rem;
+
     @include breakpoint(mobile) {
         width: 100%;
         margin-bottom: 4.4rem;
     }
+
     .swiper-container {
         overflow: visible;
     }
+
     .swiper-wrapper {
         @include breakpoint(mobile) {
             overflow-y: hidden;
@@ -133,6 +138,7 @@
             padding-left: var(--content-padding);
             padding-right: var(--content-padding);
             position: relative;
+
             &::after {
                 content: '';
                 flex-shrink: 0;
@@ -141,11 +147,13 @@
             }
         }
     }
+
     .swiper-slide {
         @include breakpoint(mobile) {
             width: auto;
             flex-shrink: 0;
             margin-right: 3rem;
+
             &:last-child {
                 margin-right: 0;
             }
@@ -159,16 +167,25 @@
     font-size: 12rem;
     line-height: 14.4rem;
     cursor: pointer;
+    transition: all 0.2s;
 
     @include breakpoint(mobile) {
         font-weight: 600;
         font-size: 4.6rem;
         line-height: 1.2;
     }
+
     &:link,
     &:visited {
         color: #24282b;
     }
+
+    &:hover {
+        -webkit-text-stroke-color: rgb(36, 40, 43) !important;
+        -webkit-text-fill-color: rgb(36, 40, 43) !important;
+        transition: all 0.2s;
+    }
+
     -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: rgba(36, 40, 43, 0);
     -webkit-text-stroke-color: #9ba1a4;
@@ -283,6 +300,7 @@
         margin-bottom: 0;
         margin-top: 4rem;
     }
+
     &:link,
     &:visited {
         color: white;
@@ -307,11 +325,13 @@
     overflow: hidden;
     background-color: var(--black);
     margin-top: 1rem;
+
     @include breakpoint(mobile) {
         margin-top: 0;
         order: -1;
         margin-bottom: 3rem;
     }
+
     &::after {
         content: '';
         display: block;
@@ -330,6 +350,20 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    &>img:last-child {
+        display: none;
+
+        @include breakpoint(mobile) {
+            display: block;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        &>img:first-child {
+            display: none;
+        }
+    }
 }
 
 .expertise__main-slider-card-image {
@@ -360,6 +394,7 @@
         justify-content: initial;
         align-items: center;
         overflow-y: hidden;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         @include noScrollbar();
         margin-left: calc(-1 * var(--content-padding));
@@ -381,13 +416,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 3rem;
+    pointer-events: none;
 
     @include breakpoint(mobile) {
-        margin-right: 4rem;
+        margin-right: 3rem;
     }
-    &:last-child {
-        margin-right: 0;
+
+    .img-size-middle {
+        max-width: 14.6rem;
+    }
+
+    .img-size-small {
+        max-width: 10.5rem;
     }
 }
 

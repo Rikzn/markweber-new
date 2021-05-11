@@ -1,5 +1,3 @@
-
-
 .page-footer__content {
     padding-left: var(--left-column-width);
 
@@ -25,7 +23,7 @@
 
 
 .page-footer__top-row {
-    
+
     padding-top: 14.7rem;
     padding-bottom: 14rem;
 
@@ -38,7 +36,7 @@
 
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        grid-template-areas: 'mainnav mainnav secnav secnav' 'contactsdata contactsdata contactsdata social' 'download download download social';
+        grid-template-areas: 'mainnav mainnav secnav secnav''contactsdata contactsdata contactsdata social''download download download social';
     }
 }
 
@@ -56,6 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     @include breakpoint(mobile) {
         display: contents;
     }
@@ -63,6 +62,7 @@
 
 .page-footer__right-col {
     display: flex;
+
     @include breakpoint(mobile) {
         flex-direction: column;
         display: contents;
@@ -76,19 +76,22 @@
     letter-spacing: -0.02em;
     margin-bottom: 1.2rem;
     display: inline-flex;
+
     @include breakpoint(mobile) {
         font-size: 2.4rem;
         line-height: 2.9rem;
         margin-bottom: 1rem;
         font-weight: 500;
     }
+
     &:link,
     &:visited {
         color: #24282b;
     }
 
     &:hover {
-        color: var(--primary-color);
+        // color: var(--primary-color);
+        opacity: 0.8;
     }
 }
 
@@ -97,6 +100,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     @include breakpoint(mobile) {
         margin-bottom: 0;
         grid-area: contactsdata;
@@ -109,12 +113,13 @@
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     color: #586267;
-  
+
     @include breakpoint(mobile) {
         font-size: 2rem;
         line-height: 2.4rem;
-       
+
     }
+
     &:link,
     &:visited {
         color: #586267;
@@ -129,6 +134,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
     @include breakpoint(mobile) {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -145,6 +151,7 @@
     @include breakpoint(mobile) {
         margin: 0;
         margin-bottom: 2rem;
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -161,6 +168,7 @@
     background-color: #f8f8f8;
     border-radius: 50%;
     transition: background-color 0.2s;
+
     svg {
         width: 1.8rem;
         height: 1.8rem;
@@ -190,7 +198,7 @@
         margin: 0;
         align-items: initial;
         grid-area: download;
-        
+
     }
 }
 
@@ -233,6 +241,7 @@
             transform: translateY(-300%);
             transition: 0.2s;
         }
+
         &::after {
             opacity: 1;
             transition: 0.2s;
@@ -244,33 +253,16 @@
     @include breakpoint(mobile) {
         display: none;
     }
+
     &:link,
     &:visited {
         color: #24282b;
     }
+
     .page-footer__brief-link-inner {
         transition: 0.2s;
     }
 
-}
-
-.page-footer__download-link {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-
-    @include breakpoint(mobile) {
-        margin-top: auto;
-    }
-    &:hover {
-        .page-footer__download-link-icon {
-            background-color: #586267;
-
-            svg {
-                fill: #f8f8f8;
-            }
-        }
-    }
 }
 
 .page-footer__download-link-icon {
@@ -287,6 +279,7 @@
     margin-right: 1.8rem;
     transition: background-color 0.2s;
     overflow: hidden;
+
     svg {
         width: 1.38rem;
         height: 1.8rem;
@@ -295,27 +288,67 @@
         transition: fill 0.2s;
         position: absolute;
     }
+
     &>svg:first-child {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: 0.2s;
     }
+
     &>svg:last-child {
         top: 125%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: 0.2s;
     }
+
     &:hover {
         &>svg:first-child {
             transform: translate(-50%, -250%);
             transition: 0.2s;
+            fill: #24282b;
         }
+
         &>svg:last-child {
             top: 125%;
             transform: translate(-50%, -270%);
             transition: 0.2s;
+            fill: #24282b;
+        }
+    }
+}
+
+.page-footer__download-link {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+
+    @include breakpoint(mobile) {
+        margin-top: auto;
+    }
+
+    &:hover {
+        .page-footer__download-link-icon {
+            background-color: #24282b;
+            flex-shrink: 0;
+            transition: fill 0.2s;
+            // position: absolute;
+
+            svg {
+                fill: #f8f8f8;
+            }
+
+            &>svg:first-child {
+                transform: translate(-50%, -250%);
+                transition: 0.2s;
+            }
+
+            &>svg:last-child {
+                top: 125%;
+                transform: translate(-50%, -270%);
+                transition: 0.2s;
+            }
         }
     }
 }
@@ -337,6 +370,7 @@
         line-height: 1.4rem;
         font-weight: 500;
     }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -369,6 +403,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-right: 8.5rem;
+
     @include breakpoint(mobile) {
         margin-right: 0;
         grid-area: mainnav;
@@ -377,6 +412,8 @@
 }
 
 .page-footer__main-nav-link {
+    position: relative;
+    overflow: hidden;
     font-size: 3.2rem;
     line-height: 3.8rem;
     letter-spacing: -0.02em;
@@ -388,16 +425,48 @@
         letter-spacing: -0.02em;
         margin-bottom: 3rem;
     }
+
     &:last-child {
         margin-bottom: 0;
     }
+
     &:link,
     &:visited {
         color: #24282b;
     }
 
+    &::after {
+        position: absolute;
+        content: attr(data-text);
+        pointer-events: none;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    &>div {
+        transition: 0.2s;
+    }
+
     &:hover {
-        color: var(--primary-color);
+
+        // color: var(--primary-color);
+        // opacity: 0.8;
+        &>div {
+            transform: translateY(-120%);
+            transition: 0.2s;
+        }
+
+        &::after {
+            opacity: 1;
+            transition: 0.2s;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 
@@ -425,9 +494,11 @@
         margin-bottom: 2rem;
         letter-spacing: -0.02em;
     }
+
     &:last-child {
         margin-bottom: 0;
     }
+
     &:link,
     &:visited {
         color: #24282b;
@@ -475,6 +546,7 @@
         font-size: 1.2rem;
         line-height: 1.4rem;
     }
+
     &:link,
     &:visited {
         color: #586267;

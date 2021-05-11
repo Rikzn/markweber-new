@@ -1,9 +1,10 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-<section class="intro js-intro-slider" data-midnight="light">
+<section class="intro js-intro-slider">
     <div class="intro__backgrounds">
-        <div class="intro__background" style="background: url(img/bg-big-mycorner.jpg); background-size: cover"
+        <div class="intro__background"
+            style="background: url(img/bg-big-mycorner.jpg); background-size: cover; background-color: white"
             data-light-bg>
 
         </div>
@@ -15,13 +16,15 @@
             style="background: linear-gradient(108.35deg, rgba(255, 255, 255, 0) 0%, #F1F1F1 100.39%)" data-light-bg>
 
         </div>
-        <div class="intro__background" style="background: url(img/bg-big-tatsosbank.png); background-size: cover">
+        <div class="intro__background"
+            style="background: url(img/bg-big-tatsosbank.png); background-size: cover; background-color: #752947">
 
         </div>
         <div class="intro__background" style="background: #EAF1FB" data-light-bg>
 
         </div>
-        <div class="intro__background" style="background: url(img/bg-big-brutaliti.png); background-size: cover">
+        <div class="intro__background"
+            style="background: url(img/bg-big-brutaliti.png); background-size: cover; background-color: #688CE2">
 
         </div>
     </div>
@@ -41,17 +44,17 @@
                 </p>
             </div>
             <div class="intro__services">
-                <a href="#" class="intro__services-link" data-text="Сайты">
+                <a href="#" class="intro__services-link intro__services-link-no-active" data-text="Сайты">
                     <div class="intro__services-link-inner">
                         Сайты
                     </div>
                 </a>
-                <a href="#" class="intro__services-link" data-text="Приложения">
+                <a href="#" class="intro__services-link intro__services-link-no-active" data-text="Приложения">
                     <div class="intro__services-link-inner">
                         Приложения
                     </div>
                 </a>
-                <a href="#" class="intro__services-link" data-text="Экспертиза">
+                <a href="#" class="intro__services-link intro__services-link-no-active" data-text="Экспертиза">
 
                     <div class="intro__services-link-inner">
                         Экспертиза
@@ -203,13 +206,13 @@
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <a href="https://kazan.hh.ru/employer/2073244"
+                                                <a href="https://kazan.hh.ru/employer/2073244" target="_blank"
                                                     class="stories-slider__master-slider-main-card">
                                                     <img src="img/hh-mark_weber.jpg" alt=""
                                                         class="stories-slider__master-slider-main-card-image">
                                                 </a>
                                             </div>
-                                            <div class="swiper-slide">
+                                            {{!-- <div class="swiper-slide">
                                                 <a href="#" class="stories-slider__master-slider-main-card">
                                                     <img src="img/stories-preview.jpg" alt=""
                                                         class="stories-slider__master-slider-main-card-image">
@@ -268,7 +271,7 @@
                                                     <img src="img/stories-preview-2.jpg" alt=""
                                                         class="stories-slider__master-slider-main-card-image">
                                                 </a>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -288,7 +291,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="swiper-slide">
+                                            {{!-- <div class="swiper-slide">
                                                 <div class="stories-slider__master-slider-thumbs-card">
                                                     <div class="stories-slider__master-slider-thumbs-card-progress">
 
@@ -364,28 +367,30 @@
                                                             class="stories-slider__master-slider-thumbs-card-preview-image">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide stories-slider__outer-slider-news-col">
-                            <a href="#" class="stories-slider__news-card">
+                            <a href="https://www.notion.so/markweber/12-f1f9f7fcf2e84ebcabd50b923bd22e7c"
+                                target="_blank" class="stories-slider__news-card">
                                 <div class="stories-slider__news-card-image-container">
-                                    <img src="img/news-card-image.jpg" alt="" class="stories-slider__news-card-image">
+                                    <img src="img/the-rebel-hero.jpg" alt="" class="stories-slider__news-card-image">
                                 </div>
                                 <h4 class="stories-slider__news-card-title">
-                                    Как лучше решить про­блему отоб­ра­же­ния това­ров в кор­зине?
+                                    Герой и бунтарь. <br>
+                                    12 архетипов брендов.
                                 </h4>
                                 <div class="stories-slider__news-card-category">
-                                    Фирстиль
+                                    Статья
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide stories-slider__outer-slider-articles-col">
                             <h3 class="stories-slider__articles-heading">
-                                Полезные статьи
+                                Мы в интернете
                             </h3>
                             <ul class="stories-slider__articles-list">
                                 <li class="stories-slider__articles-list-item">
@@ -483,8 +488,8 @@
                             Все подряд
                         </span>
 
-                        <span class="cases__top-navigation-link-count" data-text="56">
-                            56
+                        <span class="cases__top-navigation-link-count" data-text="11">
+                            11
                         </span>
                     </a>
                     <a href="#" class="cases__top-navigation-link" data-category="websites">
@@ -492,25 +497,25 @@
                         <span class="cases__top-navigation-link-text" data-text="Сайты">
                             Сайты
                         </span>
-                        <span class="cases__top-navigation-link-count" data-text="43">
-                            43
+                        <span class="cases__top-navigation-link-count" data-text="10">
+                            10
                         </span>
                     </a>
-                    <a href="#" class="cases__top-navigation-link" data-category="applications">
+                    {{!-- <a href="#" class="cases__top-navigation-link" data-category="applications">
                         <span class="cases__top-navigation-link-text" data-text="Приложения">
                             Приложения
                         </span>
                         <span class="cases__top-navigation-link-count" data-text="5">
                             5
                         </span>
-                    </a>
+                    </a> --}}
                     <a href="#" class="cases__top-navigation-link" data-category="branding">
 
                         <span class="cases__top-navigation-link-text" data-text="Брендинг">
                             Брендинг
                         </span>
-                        <span class="cases__top-navigation-link-count" data-text="11">
-                            11
+                        <span class="cases__top-navigation-link-count" data-text="1">
+                            1
                         </span>
                     </a>
                 </nav>
@@ -522,13 +527,56 @@
         </div>
 
         <div class="cases__image-grid">
-            <a href="#" class="cases__image-grid-card" data-category="websites">
-                <img data-src="" alt="" class="cases__image-grid-card-image lazyload">
+            <a href="https://tota.systems/" target="_blank" class="cases__image-grid-card" data-category="branding">
+                <img data-src="img/tota-systems.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт и брендинг
+                        </div>
+                        <div class="cases__image-grid-card-content-link">
+                            tota.systems
+                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
+                                <use xlink:href="#outer-link" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 class="cases__image-grid-card-content-name">
+                        Tota Systems
+                    </h3>
+                </div>
+            </a>
+            <a href="https://www.bankofkazan.ru/" target="_blank" class="cases__image-grid-card"
+                data-category="applications" data-parallax-offset="-50">
+                <img data-src="img/bank-kazan.jpg" alt="" class="cases__image-grid-card-image lazyload">
+                <div class="cases__image-grid-card-content">
+                    <div class="cases__image-grid-card-content-top-row">
+                        <div class="cases__image-grid-card-content-type">
+                            Сайт
+                        </div>
+                        <div class="cases__image-grid-card-content-link">
+                            bankofkazan.ru
+                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
+                                <use xlink:href="#outer-link" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 class="cases__image-grid-card-content-name">
+                        Банк Казани
+                    </h3>
+                </div>
+            </a>
+            <a href="#" target="_blank" class="cases__image-grid-card cases__image-grid-card--dark"
+                data-category="websites">
+                <img data-src="img/compass.jpg" alt="" class="cases__image-grid-card-image lazyload">
+
+                <div class="cases__image-grid-card-content">
+                    <div class="cases__image-grid-card-content-top-row">
+                        <div class="cases__image-grid-card-content-type">
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
                             proroditelstvo.ru
@@ -539,19 +587,21 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        Compass
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card" data-category="applications" data-parallax-offset="-50">
-                <img data-src="img/cases/2.jpg" alt="" class="cases__image-grid-card-image lazyload">
+            <a href="https://icl-techno.ru/" target="_blank" class="cases__image-grid-card" data-category="applications"
+                data-parallax-offset="-40">
+                <img data-src="img/icl-techno.jpg" alt="" class="cases__image-grid-card-image lazyload">
+
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            icl-techno.ru
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -559,63 +609,22 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        ICL-Техно
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card" data-category="websites">
-                <img data-src="img/cases/3.jpg" alt="" class="cases__image-grid-card-image lazyload">
-
-                <div class="cases__image-grid-card-content">
-                    <div class="cases__image-grid-card-content-top-row">
-                        <div class="cases__image-grid-card-content-type">
-                            Свежий проект
-                        </div>
-                        <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
-                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
-                                <use xlink:href="#outer-link" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
-                    </h3>
-                </div>
-            </a>
-            <a href="#" class="cases__image-grid-card" data-category="applications" data-parallax-offset="-40">
-                <img data-src="img/cases/4.jpg" alt="" class="cases__image-grid-card-image lazyload">
-
-                <div class="cases__image-grid-card-content">
-                    <div class="cases__image-grid-card-content-top-row">
-                        <div class="cases__image-grid-card-content-type">
-                            Свежий проект
-                        </div>
-                        <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
-                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
-                                <use xlink:href="#outer-link" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
-                    </h3>
-                </div>
-            </a>
-            <a href="#" class="cases__image-grid-card cases__image-grid-card--dark" data-category="websites"
+            <a href="https://brutalitygame.ru/" target="_blank"
+                class="cases__image-grid-card cases__image-grid-card--dark" data-category="websites"
                 data-parallax-offset="-20">
-                <img data-src="img/cases/5.jpg" alt="" class="cases__image-grid-card-image lazyload">
+                <img data-src="img/brutaliti.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            brutalitygame.ru
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -623,20 +632,20 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        Бруталити
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card" data-category="branding">
-                <img data-src="img/cases/6.jpg" alt="" class="cases__image-grid-card-image lazyload">
+            <a href="https://mycorner.ru/" target="_blank" class="cases__image-grid-card" data-category="websites">
+                <img data-src="img/nycorner.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            mycorner.ru
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -644,21 +653,21 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        My Corner
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card cases__image-grid-card--dark" data-category="applications"
+            <a href="https://timerbank.ru/" target="_blank" class="cases__image-grid-card" data-category="applications"
                 data-parallax-offset="-60">
-                <img data-src="img/cases/7.jpg" alt="" class="cases__image-grid-card-image lazyload">
+                <img data-src="img/timerbank.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            timerbank.ru
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -666,20 +675,20 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        Тимер Банк
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card" data-category="branding">
-                <img data-src="img/cases/8.jpg" alt="" class="cases__image-grid-card-image lazyload">
+            <a href="https://ailet.com/" target="_blank" class="cases__image-grid-card" data-category="websites">
+                <img data-src="img/ailet.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            ailet.com
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -687,20 +696,20 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        Ailet
                     </h3>
                 </div>
             </a>
-            <a href="#" class="cases__image-grid-card" data-category="websites">
-                <img data-src="img/cases/9.jpg" alt="" class="cases__image-grid-card-image lazyload">
+            <a href="http://www.smu4ufa.ru/" target="_blank" class="cases__image-grid-card" data-category="websites">
+                <img data-src="img/smu-4.jpg" alt="" class="cases__image-grid-card-image lazyload">
 
                 <div class="cases__image-grid-card-content">
                     <div class="cases__image-grid-card-content-top-row">
                         <div class="cases__image-grid-card-content-type">
-                            Свежий проект
+                            Сайт
                         </div>
                         <div class="cases__image-grid-card-content-link">
-                            proroditelstvo.ru
+                            smu4ufa.ru
                             <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
                                 <use xlink:href="#outer-link" />
                             </svg>
@@ -708,18 +717,63 @@
                     </div>
 
                     <h3 class="cases__image-grid-card-content-name">
-                        Прородительство
+                        СМУ-4
                     </h3>
                 </div>
             </a>
+            <a href="https://bars.group/" target="_blank" class="cases__image-grid-card cases__image-grid-card--dark"
+                data-category="websites">
+                <img data-src="img/bars-gruop.jpg" alt="" class="cases__image-grid-card-image lazyload">
+
+                <div class="cases__image-grid-card-content">
+                    <div class="cases__image-grid-card-content-top-row">
+                        <div class="cases__image-grid-card-content-type">
+                            Сайт
+                        </div>
+                        <div class="cases__image-grid-card-content-link">
+                            bars.group
+                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
+                                <use xlink:href="#outer-link" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 class="cases__image-grid-card-content-name">
+                        БАРС Груп
+                    </h3>
+                </div>
+            </a>
+            <a href="https://pharmmedpolis.com/" target="_blank"
+                class="cases__image-grid-card cases__image-grid-card--dark" data-category="websites">
+                <img data-src="img/farmed.jpg" alt="" class="cases__image-grid-card-image lazyload">
+
+                <div class="cases__image-grid-card-content">
+                    <div class="cases__image-grid-card-content-top-row">
+                        <div class="cases__image-grid-card-content-type">
+                            Сайт
+                        </div>
+                        <div class="cases__image-grid-card-content-link">
+                            pharmmedpolis.com
+                            <svg width="24" height="24" aria-hidden="true" class="icon-outer-link">
+                                <use xlink:href="#outer-link" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3 class="cases__image-grid-card-content-name">
+                        Фарммедполис
+                    </h3>
+                </div>
+            </a>
+            {{!-- data-category branding applications websites --}}
         </div>
 
         <div class="cases__bottom-nav">
             <a href="#" class="cases__bottom-nav-link">
-                Смотреть все кейсы
+                {{!-- Смотреть все кейсы
                 <svg width="24" height="24" aria-hidden="true" class="icon-arrow-right">
                     <use xlink:href="#arrow-right" />
-                </svg>
+                </svg> --}}
             </a>
         </div>
 
@@ -824,15 +878,15 @@
                                 </a>
                                 <div class="expertise__partners">
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-bank-kazan.png" alt=""
+                                        <img src="img/partners/icon-bank-kazan.png" alt=""
                                             class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-timer-bank.png" alt=""
+                                        <img src="img/partners/icon-timer-bank.png" alt=""
                                             class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-tatsosbank.png" alt=""
+                                        <img src="img/partners/icon-tatsosbank.png" alt=""
                                             class="expertise__partners-link-image">
                                     </a>
                                 </div>
@@ -842,6 +896,8 @@
                                     <div class="expertise__main-slider-card-image-parallax-wrapper"
                                         data-swiper-parallax-x="-20%" data-swiper-parallax-duration="1000">
                                         <img src="img/bg-item-finance.jpg" alt=""
+                                            class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-finance-mini.jpg" alt=""
                                             class="expertise__main-slider-card-image">
                                     </div>
 
@@ -886,16 +942,20 @@
                                 </a>
                                 <div class="expertise__partners">
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-tnv.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/icon-tnv.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-bolgar.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/icon-bolgar.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-ahisha.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/icon-ahisha.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-parents.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/icon-parents.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                 </div>
                             </div>
@@ -904,6 +964,8 @@
                                     <div class="expertise__main-slider-card-image-parallax-wrapper"
                                         data-swiper-parallax-x="-20%" data-swiper-parallax-duration="1000">
                                         <img src="img/bg-item-mass-media.jpg" alt=""
+                                            class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-mass-media-mini.jpg" alt=""
                                             class="expertise__main-slider-card-image">
                                     </div>
 
@@ -947,18 +1009,20 @@
                                 </a>
                                 <div class="expertise__partners">
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-bars-grup.png" alt="" class="expertise__partners-link-image">
-                                    </a>
-                                    <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-icl-techno.png" alt=""
+                                        <img src="img/partners/icon-bars-grup.png" alt=""
                                             class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-infomatika.png" alt=""
+                                        <img src="img/partners/icon-icl-techno.png" alt=""
                                             class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/icon-aiteko.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/icon-infomatika.png" alt=""
+                                            class="expertise__partners-link-image">
+                                    </a>
+                                    <a href="#" class="expertise__partners-link">
+                                        <img src="img/partners/icon-aiteko.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                 </div>
                             </div>
@@ -966,7 +1030,9 @@
                                 <div class="expertise__main-slider-card-image-container">
                                     <div class="expertise__main-slider-card-image-parallax-wrapper"
                                         data-swiper-parallax-x="-10%" data-swiper-parallax-duration="1000">
-                                        <img src="img/bg-item-it.png" alt="" class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-it.jpg" alt="" class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-it-mini.jpg" alt=""
+                                            class="expertise__main-slider-card-image">
                                     </div>
 
                                 </div>
@@ -1142,27 +1208,33 @@
                                 </a>
                                 <div class="expertise__partners">
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/1.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/brutality.png" alt=""
+                                            class="expertise__partners-link-image img-size-middle">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/2.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/first-test.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/3.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/auto-digit.png" alt=""
+                                            class="expertise__partners-link-image img-size-middle">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/4.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/yaasbae.png" alt=""
+                                            class="expertise__partners-link-image img-size-small">
                                     </a>
-                                    <a href="#" class="expertise__partners-link">
+                                    {{!-- <a href="#" class="expertise__partners-link">
                                         <img src="img/partners/5.png" alt="" class="expertise__partners-link-image">
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                             <div class="expertise__main-slider-card-right-col">
                                 <div class="expertise__main-slider-card-image-container">
                                     <div class="expertise__main-slider-card-image-parallax-wrapper"
                                         data-swiper-parallax-x="-10%" data-swiper-parallax-duration="1000">
-                                        <img src="img/bg-item-E-commerce.png" alt=""
+                                        <img src="img/bg-item-E-commerce.jpg" alt="bg-item-E-commerce"
+                                            class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-E-commerce-mini.jpg" alt="bg-item-E-commerce"
                                             class="expertise__main-slider-card-image">
                                     </div>
 
@@ -1208,20 +1280,23 @@
                                 </a>
                                 <div class="expertise__partners">
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/1.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/suvarstroit.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/2.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/valdek.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
-                                        <img src="img/partners/3.png" alt="" class="expertise__partners-link-image">
+                                        <img src="img/partners/corner.png" alt=""
+                                            class="expertise__partners-link-image">
                                     </a>
-                                    <a href="#" class="expertise__partners-link">
+                                    {{!-- <a href="#" class="expertise__partners-link">
                                         <img src="img/partners/4.png" alt="" class="expertise__partners-link-image">
                                     </a>
                                     <a href="#" class="expertise__partners-link">
                                         <img src="img/partners/5.png" alt="" class="expertise__partners-link-image">
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                             <div class="expertise__main-slider-card-right-col">
@@ -1229,6 +1304,8 @@
                                     <div class="expertise__main-slider-card-image-parallax-wrapper"
                                         data-swiper-parallax-x="-10%" data-swiper-parallax-duration="1000">
                                         <img src="img/bg-item-real_estate.jpg" alt=""
+                                            class="expertise__main-slider-card-image">
+                                        <img src="img/bg-item-real_estate-mini.jpg" alt=""
                                             class="expertise__main-slider-card-image">
                                     </div>
 

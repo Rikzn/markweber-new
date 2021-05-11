@@ -2,10 +2,13 @@
     <div class="container">
         <div class="page-header__row">
 
-            <a href="#" class="page-header__logo-link">
+            <a href="/" class="page-header__logo-link">
                 {{> logo }}
+
             </a>
-         
+            <div class="page-header__about-link-inner">
+                Меню
+            </div>
             <div class="page-header__buttons">
                 <button class="page-header__button">
                     <span class="page-header__button-content">
@@ -13,7 +16,8 @@
                         <span></span>
                     </span>
                 </button>
-                <a href="#" class="page-header__contact-link {{#if dark}} disabled {{/if}}" data-text="Связаться">
+                <a href="/contact.html" class="page-header__contact-link {{#if dark}} disabled {{/if}}"
+                    data-text="Связаться">
                     <div class="page-header__contact-link-inner">
                         Связаться
                     </div>

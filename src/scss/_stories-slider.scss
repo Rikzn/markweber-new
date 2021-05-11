@@ -51,6 +51,7 @@
     font-size: 1.5rem;
     line-height: 1.8rem;
     transition: opacity 0.2s;
+
     svg {
         width: 2.2rem;
         height: 1.4rem;
@@ -75,7 +76,7 @@
     }
 }
 
-.stories-slider__outer-slider > .swiper-container {
+.stories-slider__outer-slider>.swiper-container {
     margin: 0;
     overflow: visible;
 }
@@ -96,19 +97,35 @@
 
     @include breakpoint(mobile) {
         box-sizing: border-box;
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        max-height: 69rem;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
 }
 
 .stories-slider__outer-slider-main-col {
     @include breakpointMF(small-tablet) {
-        width: 43rem;
+        max-width: 43rem;
         margin-right: 2rem;
     }
 
     @include breakpoint(mobile) {
-        margin-bottom: 4rem;
+        max-width: 43rem;
+        margin-right: 9rem;
     }
+
+    @include breakpoint(small-mobile) {
+        max-width: 27rem;
+        margin-right: 2rem;
+        max-height: 45rem;
+    }
+
 }
 
 .stories-slider__outer-slider-news-col {
@@ -119,12 +136,24 @@
 
     @include breakpoint(mobile) {
         margin-bottom: 4rem;
+        max-width: 43.5rem;
+        margin-right: 8.5rem;
     }
+
+    @include breakpoint(small-mobile) {
+        max-width: 30.5rem;
+        margin-right: 3.5rem;
+    }
+
 }
 
 .stories-slider__outer-slider-articles-col {
     @include breakpointMF(small-tablet) {
         width: 26rem;
+    }
+
+    @include breakpoint(mobile) {
+        max-width: 22rem;
     }
 }
 
@@ -154,6 +183,7 @@
     @include breakpoint(mobile) {
         margin-bottom: 2.5rem;
     }
+
     &::after {
         content: '';
         display: block;
@@ -212,6 +242,7 @@
 
 .stories-slider__articles-list-item {
     margin-bottom: 4rem;
+
     @include breakpoint(mobile) {
         margin-bottom: 2rem;
     }
@@ -257,6 +288,7 @@
 .stories-slider__master-slider {
     position: relative;
     overflow: hidden;
+
     &::after {
         content: '';
         position: absolute;
@@ -291,6 +323,7 @@
 .stories-slider__master-slider-main-card {
     position: relative;
     overflow: hidden;
+
     &::before {
         content: '';
         display: block;
@@ -306,6 +339,7 @@
     height: 0.2rem;
     background: rgba(white, 0.4);
     transition: opacity 0.3s;
+
     &::before {
         content: '';
         position: absolute;
@@ -344,6 +378,7 @@
     .swiper-container {
         overflow: visible;
     }
+
     .swiper-slide {
         width: 6rem;
 
@@ -368,7 +403,7 @@
     transform: rotateX(-180deg);
     transform-origin: center top;
 
-   
+
     &::before {
         content: '';
         display: block;
@@ -423,6 +458,7 @@
         font-size: 2.2rem;
         line-height: 1.2;
     }
+
     span {
         background: #f9cc46;
         color: #24282b;

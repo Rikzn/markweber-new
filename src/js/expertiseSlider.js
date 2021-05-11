@@ -154,14 +154,14 @@ export default function ExpertiseSlider() {
                     mainSlider.slideTo(currentIndex + 1)
                 }
 
-                
+
             });
             hammertime.on('swiperight', () => {
                 const currentIndex = mainSlider.activeIndex;
                 if (navSlides[currentIndex - 1]) {
                     mainSlider.slideTo(currentIndex - 1)
                 }
-                
+
             });
         }
     });

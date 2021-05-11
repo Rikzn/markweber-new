@@ -25,7 +25,7 @@ export default function FixedFooter() {
     }
 
     if (!window.matchMedia('(max-width: 640px)').matches) {
-     
+
         setFixedFooter();
         window.addEventListener('resize', debounce(() => {
             gsap.set(pageFooter, {
